@@ -24,7 +24,7 @@ class _BullingState extends State<Bulling> {
           var datos = await FirebaseDatabase.instance.reference().child("plantilla").child("Habitosalimenticios").once();
           List preguntas = datos.value as List;
           Navigator. of(context).push(
-            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas)
+            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'Habitosalimenticios',)
             ),
           );
           print(datos);

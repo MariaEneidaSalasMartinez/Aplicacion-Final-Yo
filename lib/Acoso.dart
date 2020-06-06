@@ -26,11 +26,9 @@ class _AcosoState extends State<Acoso> {
           await FirebaseDatabase.instance.reference().child("plantilla").child("Acoso").once();
           List preguntas = datos.value as List;
           Navigator. of(context).push(
-            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas)
+            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'Acoso',)
             ),
           );
-          print(datos);
-          print(preguntas);
         },
       ),
       backgroundColor: Colors.white,

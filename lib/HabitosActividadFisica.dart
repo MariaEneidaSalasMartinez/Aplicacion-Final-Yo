@@ -24,7 +24,7 @@ class _HabitosActividadFisicaState extends State<HabitosActividadFisica> {
           var datos = await FirebaseDatabase.instance.reference().child("plantilla").child("HabitosActividadFisica").once();
           List preguntas = datos.value as List;
           Navigator. of(context).push(
-            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas)
+            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'HabitosActividadFisica',)
             ),
           );
           print(datos);
