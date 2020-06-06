@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "327232134847",
+    "firebase_url": "https://pruebaflutter-86516.firebaseio.com",
+    "project_id": "pruebaflutter-86516",
+    "storage_bucket": "pruebaflutter-86516.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327232134847:android:422dc034d0a3c41ad3300a",
+        "android_client_info": {
+          "package_name": "cozcyt.gob.mx.todo_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327232134847-bl4uh9l9fos2p7671rft38llsfmp6b61.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cozcyt.gob.mx.todo_app",
+            "certificate_hash": "c5550e17f7ec72e66f8a950fe30c15a971dcfbaa"
+          }
+        },
+        {
+          "client_id": "327232134847-pmpf2um813bbem787bb4rn0lhtltjtop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtUbZuUViseka-diHuf9Xpng6CETBC66k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327232134847-pmpf2um813bbem787bb4rn0lhtltjtop.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
