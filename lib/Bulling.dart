@@ -73,6 +73,14 @@ class _BullingState extends State<Bulling> {
         ),
         Container(
           padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/bullying/img1a.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/bullying/img1b.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
           child: Image.asset("assets/bullying/img1.jpg"),
         ),
         Container(

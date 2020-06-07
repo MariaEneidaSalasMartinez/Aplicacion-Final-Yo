@@ -153,6 +153,8 @@ flutter:
       - assets/tiempolibre/img5.png
       - assets/tiempolibre/img6.png
       # "Informacio" Bullying
+      - assets/bullying/img1a.png
+      - assets/bullying/img1b.png
       - assets/bullying/img1.jpg
       - assets/bullying/img2.jpg
       - assets/bullying/img3.jpg
@@ -164,6 +166,33 @@ flutter:
       - assets/acoso/img2.png
       - assets/acoso/img3.png
       - assets/acoso/img4.png
+      # Informacion" Preferencias Estudio
+      - assets/preferenciasestudio/img1.png
+      - assets/preferenciasestudio/img2.png
+      - assets/preferenciasestudio/img3.png
+      - assets/preferenciasestudio/img4.png
+      - assets/preferenciasestudio/img5.png
+      - assets/preferenciasestudio/img6.png
+      - assets/preferenciasestudio/img7.png
+      - assets/preferenciasestudio/img8.png
+      - assets/preferenciasestudio/img9.png
+      - assets/preferenciasestudio/img10.png
+      - assets/preferenciasestudio/img11.png
+      - assets/preferenciasestudio/img12.png
+      - assets/preferenciasestudio/img13.png
+      # "Informacion" Intereses
+      - assets/intereses/img1.png
+      # "Informacion" Aspiraciones
+      - assets/aspiraciones/img1.png
+      - assets/aspiraciones/img2.png
+      - assets/aspiraciones/img3.png
+      - assets/aspiraciones/img4.png
+      - assets/aspiraciones/img5.png
+      - assets/aspiraciones/img6.png
+      - assets/aspiraciones/img7.png
+      # "Informacion" Identidad Genero
+      - assets/identidadgenero/img1.png
+      - assets/identidadgenero/img2.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

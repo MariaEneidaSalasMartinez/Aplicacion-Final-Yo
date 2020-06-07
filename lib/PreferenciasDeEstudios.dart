@@ -56,6 +56,58 @@ class _PreferenciasDeEstudiosState extends State<PreferenciasDeEstudios> {
               ],
     ),
         ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/apreferenciasestudio/img1.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/preferenciasestudio/img2.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/preferenciasestudio/img3.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/preferenciasestudio/img4.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/preferenciasestudio/img5.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/preferenciasestudio/img6.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/preferenciasestudio/img7.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/preferenciasestudio/img8.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/preferenciasestudio/img9.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/preferenciasestudio/img10.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/preferenciasestudio/img11.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/preferenciasestudio/img12.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/preferenciasestudio/img13.png"),
+        ),
       ],),
     );
   }

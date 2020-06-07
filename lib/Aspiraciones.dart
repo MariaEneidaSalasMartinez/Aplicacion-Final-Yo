@@ -56,6 +56,34 @@ class _AspiracionesState extends State<Aspiraciones> {
               ],
     ),
         ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/aspiraciones/img1.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/aspiraciones/img2.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/aspiraciones/img3.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/aspiraciones/img4.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/aspiraciones/img5.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/aspiraciones/img6.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/aspiraciones/img7.png"),
+        ),
       ],),
     );
   }

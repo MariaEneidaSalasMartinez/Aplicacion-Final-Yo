@@ -71,6 +71,14 @@ class _IdentidadDeGeneroState extends State<IdentidadDeGenero> {
               ],
     ),
         ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/identidadgenero/img1.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/identidadgenero/img2.png"),
+        ),
       ],),
     );
   }

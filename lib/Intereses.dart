@@ -71,6 +71,10 @@ class _InteresesState extends State<Intereses> {
               ],
     ),
         ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/intereses/img1.png"),
+        ),
       ],),
     );
   }
