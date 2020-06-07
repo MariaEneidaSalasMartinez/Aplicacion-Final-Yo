@@ -22,10 +22,10 @@ class _HabitosAlimenticiosState extends State<HabitosAlimenticios> {
         onPressed: () async
         {
           var datos =
-          await FirebaseDatabase.instance.reference().child("plantilla").child("Habitosalimenticios").once();
+          await FirebaseDatabase.instance.reference().child("plantilla").child("Habitos alimenticios").once();
           List preguntas = datos.value as List;
           Navigator. of(context).push(
-            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'Habitosalimenticios',)
+            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'Habitos alimenticios',)
           ),
           );
           print(datos);

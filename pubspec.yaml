@@ -160,7 +160,10 @@ flutter:
       - assets/bullying/img5.jpg
       - assets/bullying/img6.jpg
       # "Informacion" Acoso
-      - assets/acoso/img2.jpg
+      - assets/acoso/img1.png
+      - assets/acoso/img2.png
+      - assets/acoso/img3.png
+      - assets/acoso/img4.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

@@ -23,10 +23,10 @@ class _AdiccionesState extends State<Adicciones> {
         onPressed: () async
         {
           var datos =
-          await FirebaseDatabase.instance.reference().child("plantilla").child("Habitosalimenticios").once();
+          await FirebaseDatabase.instance.reference().child("plantilla").child("Adicciones").once();
           List preguntas = datos.value as List;
           Navigator. of(context).push(
-            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'Habitosalimenticios',)
+            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'Adicciones',)
             ),
           );
           print(datos);

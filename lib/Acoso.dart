@@ -74,7 +74,19 @@ class _AcosoState extends State<Acoso> {
         ),
         Container(
           padding: EdgeInsets.all(20.0),
-          child: Image.asset("assets/bullying/img2.jpg"),
+          child: Image.asset("assets/acoso/img1.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/acoso/img2.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/acoso/img3.png"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/acoso/img4.png"),
         ),
       ],),
     );

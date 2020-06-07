@@ -21,10 +21,10 @@ class _SexualidadState extends State<Sexualidad> {
       floatingActionButton: FancyButton(
         onPressed: () async
         {
-          var datos = await FirebaseDatabase.instance.reference().child("plantilla").child("Habitosalimenticios").once();
+          var datos = await FirebaseDatabase.instance.reference().child("plantilla").child("Sexualidad").once();
           List preguntas = datos.value as List;
           Navigator. of(context).push(
-            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'Habitosalimenticios',)
+            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'Sexualidad',)
             ),
           );
           print(datos);

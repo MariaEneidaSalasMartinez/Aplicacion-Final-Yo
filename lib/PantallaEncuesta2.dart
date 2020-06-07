@@ -13,9 +13,11 @@ class PantallaEncuesta extends StatefulWidget {
 
 class _PantallaEncuestaState extends State<PantallaEncuesta> {
   final GlobalKey<FormState> mKey = GlobalKey<FormState>();
+  final _scaffoldKey = GlobalKey<ScaffoldState>();
 
   Widget build(context) {
     return Scaffold(
+      key: _scaffoldKey,
       appBar: AppBar(
         title: Text('Encuesta')
       ),
@@ -29,8 +31,13 @@ class _PantallaEncuestaState extends State<PantallaEncuesta> {
                 child: Text('Enviar'),
                 onPressed: () {
                   if (mKey.currentState.validate()) {
-                    FirebaseDatabase.instance.reference().child('respuestas').child('id').child(widget.tema).set(widget.preguntas);
+                    FirebaseDatabase.instance.reference().child('respuestas').child('').child(widget.tema).set(widget.preguntas);
                   }
+                  _scaffoldKey.currentState.showSnackBar(SnackBar(
+                      content: Text('Encuesta Guardada'),
+                      duration: Duration(milliseconds: 3000),
+                      backgroundColor: Colors.purple//Color(0xffee6179),
+                  ));
                 },
               );
             }

@@ -21,10 +21,10 @@ class _InteresesState extends State<Intereses> {
       floatingActionButton: FancyButton(
         onPressed: () async
         {
-          var datos = await FirebaseDatabase.instance.reference().child("plantilla").child("Habitos alimenticios").once();
+          var datos = await FirebaseDatabase.instance.reference().child("plantilla").child("Construyo un proyecto de vida").once();
           List preguntas = datos.value as List;
           Navigator. of(context).push(
-            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'Habitos alimenticios',)
+            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'Construyo un proyecto de vida',)
             ),
           );
           print(datos);
