@@ -193,6 +193,8 @@ flutter:
       # "Informacion" Identidad Genero
       - assets/identidadgenero/img1.png
       - assets/identidadgenero/img2.png
+      # "Informacion" Adicciones
+      - assets/adicciones/img1.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

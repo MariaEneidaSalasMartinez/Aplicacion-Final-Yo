@@ -75,7 +75,8 @@ class _AdiccionesState extends State<Adicciones> {
     ),
         ),
         Container(
-
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/adicciones/img1.png"),
         ),
       ],),
     );

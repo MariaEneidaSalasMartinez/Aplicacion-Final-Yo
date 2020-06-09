@@ -118,38 +118,34 @@ Widget build(BuildContext context){
           )*/
         ),        
    SizedBox(height: 0.0),
-    Container(
-      height: 70.0,
-      child: ListView(
-        children: <Widget>[
-          Row(
-              mainAxisAlignment: MainAxisAlignment.center,              
-              children: <Widget>[ 
-          FlatButton.icon(  
-                  padding: EdgeInsets.only(
-                     top: 12,
-                     bottom: 15,
-                      right: 35,
-                      left: 35,                    
-                   ),              
-                   color: Colors.lightGreen[900],                                      
-                   label: Text( "CONTINUAR"),                    
-                  icon: Icon(Icons.info),                                     
-                  onPressed: (){
-                    Navigator.of(context).push(MaterialPageRoute(
-                      builder: (_) => EjesTransversales()
-                    ));
-                  },
-                   shape: StadiumBorder(),                   
-                      textColor: Colors.white,
-                      highlightColor: Colors.white
-                      ),
-              ]
+        selectedPlantel!=null? Container(
+          height: 70.0,
+          child: ListView(
+            children: <Widget>[
+              Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    FlatButton.icon(
+                        padding: EdgeInsets.only(
+                          top: 12,
+                          bottom: 15,
+                          right: 35,
+                          left: 35,
+                        ),
+                        color: Colors.lightGreen[900],
+                        label: Text("CONTINUAR"),
+                        icon: Icon(Icons.info),
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (_) => EjesTransversales()));
+                        },
+                        shape: StadiumBorder(),
+                        textColor: Colors.white,
+                        highlightColor: Colors.white),
+                  ]),
+            ],
           ),
-
-        ],
-      ),
-    )
+        ):SizedBox(),
       ],  
     ), 
   );
