@@ -1,3 +1,4 @@
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:yo/EjesTransversale.dart';
 import 'package:yo/splash_screen.dart';
@@ -38,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
   List<DropdownMenuItem> generateItems(List<SubSistema> subsistema){
     List<DropdownMenuItem> items = [];
     for(var item in subsistema){
-      items.add(DropdownMenuItem(child: Text(item.name), value: item,));
+      items.add(DropdownMenuItem(child: Text(item.name, style: TextStyle(color: Colors.black),), value: item,));
     }
     return items;
   }
@@ -51,6 +52,23 @@ class _MyHomePageState extends State<MyHomePage> {
       items.add(DropdownMenuItem(child: Text(item.name), value: item,));
     }
     return items;
+  }
+
+  Map<String, dynamic> data = {};
+
+  @override
+  void initState() {
+    super.initState();
+    FirebaseDatabase.instance.reference().child('acceso').once().then((value) {
+      data = Map.from(value.value);
+      subsitema.clear();
+      for (var key in Map.from(value.value).keys) {
+        subsitema.add(SubSistema(key));
+      }
+      setState(() {
+
+      });
+    });
   }
  @override
 Widget build(BuildContext context){
@@ -73,6 +91,7 @@ Widget build(BuildContext context){
                     ) ,
               SizedBox(height: 30.0),
               Container(
+                color: Colors.white,
                           padding: EdgeInsets.only(
                            top: 1,
                            right: 70,
@@ -80,10 +99,16 @@ Widget build(BuildContext context){
                            ),
                            child: DropdownButton(
                           isExpanded: true,
-                          style: TextStyle(fontSize: 20, color: Colors.white),
+                          style: TextStyle(fontSize: 20, color: Colors.black,),
                          value: selectedSubSistema,
                          items: generateItems(subsitema),
                           onChanged: (item){
+                            plantel.clear();
+                            for (var mapa in data[item.name]) {
+                              print(mapa.runtimeType);
+                              Map<String, dynamic> datos = Map.from(mapa);
+                              plantel.add(Plantel(datos['plantel']));
+                            }
                             setState((){
                                 selectedSubSistema = item;
                             });
@@ -92,6 +117,7 @@ Widget build(BuildContext context){
                               ),
             SizedBox(height: 20.0),
              Container(
+               color: Colors.white,
                           padding: EdgeInsets.only(
                            top: 10,
                            right: 70,
@@ -99,7 +125,7 @@ Widget build(BuildContext context){
                            ),
                            child: DropdownButton(
                           isExpanded: true,
-                          style: TextStyle(fontSize: 20, color: Colors.white),
+                          style: TextStyle(fontSize: 20, color: Colors.black),
                          value: selectedPlantel,
                          items: generateItems2(plantel),
                           onChanged: (item){
