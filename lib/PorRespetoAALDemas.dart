@@ -65,13 +65,7 @@ class _PorRespetoAmiYALosDemasState extends State<PorRespetoAmiYALosDemas> {
                        ),
                       ],
                     ),
-                  Row(                  
-                      children: [ 
-                        Expanded(
-                        child: _buildSubSistemaItem11('icons/PorRespA/Violencia.jpg'), 
-                        ), 
-                      ],
-                    )
+
                  
               ]
             )

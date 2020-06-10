@@ -18,18 +18,6 @@ class _IdentidadDeGeneroState extends State<IdentidadDeGenero> {
   @override
   Widget build(BuildContext context) {     
     return Scaffold(
-      floatingActionButton: FancyButton(
-        onPressed: () async
-        {
-          var datos = await FirebaseDatabase.instance.reference().child("plantilla").child("Habitosalimenticios").once();
-          List preguntas = datos.value as List;
-          Navigator. of(context).push(
-            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'Habitosalimenticios',)
-            ),
-          );
-          print(datos);
-        },
-      ),
       backgroundColor: Colors.white,
       appBar: AppBar(
         leading: IconButton(

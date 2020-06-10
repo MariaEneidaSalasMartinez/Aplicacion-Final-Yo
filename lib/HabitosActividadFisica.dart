@@ -18,18 +18,6 @@ class _HabitosActividadFisicaState extends State<HabitosActividadFisica> {
   @override
   Widget build(BuildContext context) {     
     return Scaffold(
-      floatingActionButton: FancyButton(
-        onPressed: () async
-        {
-          var datos = await FirebaseDatabase.instance.reference().child("plantilla").child("HabitosActividadFisica").once();
-          List preguntas = datos.value as List;
-          Navigator. of(context).push(
-            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'HabitosActividadFisica',)
-            ),
-          );
-          print(datos);
-        },
-      ),
       backgroundColor: Colors.white,
       appBar: AppBar(
         leading: IconButton(

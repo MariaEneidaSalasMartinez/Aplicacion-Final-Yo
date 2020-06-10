@@ -19,19 +19,6 @@ class _AdiccionesState extends State<Adicciones> {
   @override
   Widget build(BuildContext context) {     
     return Scaffold(
-      floatingActionButton: FancyButton(
-        onPressed: () async
-        {
-          var datos =
-          await FirebaseDatabase.instance.reference().child("plantilla").child("Adicciones").once();
-          List preguntas = datos.value as List;
-          Navigator. of(context).push(
-            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'Adicciones',)
-            ),
-          );
-          print(datos);
-        },
-      ),
       backgroundColor: Colors.white,
       appBar: AppBar(
         leading: IconButton(
