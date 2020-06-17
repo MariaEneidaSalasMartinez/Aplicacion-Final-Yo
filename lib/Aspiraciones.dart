@@ -30,7 +30,8 @@ class _AspiracionesState extends State<Aspiraciones> {
         style: TextStyle(fontFamily: 'Armando',fontSize: 19.0, color: Colors.white)),
        centerTitle: true,
         ),
-   body: ListView(
+   body: SingleChildScrollView(
+    child: Column(
       children: <Widget>[          
         Container(
           child: Column(     
@@ -55,6 +56,10 @@ class _AspiracionesState extends State<Aspiraciones> {
                           ),
               ],
     ),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/aspiraciones/infografiaaspiraciones.jpg"),
         ),
         Container(
           padding: EdgeInsets.all(20.0),
@@ -85,6 +90,7 @@ class _AspiracionesState extends State<Aspiraciones> {
           child: Image.asset("assets/aspiraciones/img7.png"),
         ),
       ],),
+    ),
     );
   }
   

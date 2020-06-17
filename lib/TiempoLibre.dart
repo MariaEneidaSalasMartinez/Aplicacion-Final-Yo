@@ -46,7 +46,8 @@ class _TiempoLibreState extends State<TiempoLibre> {
         style: TextStyle(fontFamily: 'Armando',fontSize: 19.0, color: Colors.white)),
        centerTitle: true,
         ),
-   body: ListView(
+   body: SingleChildScrollView(
+    child: Column(
       children: <Widget>[          
         Container(
           child: Column(     
@@ -97,6 +98,7 @@ class _TiempoLibreState extends State<TiempoLibre> {
           child: Image.asset("assets/tiempolibre/img6.png"),
         ),
       ],),
+    ),
     );
   }
   

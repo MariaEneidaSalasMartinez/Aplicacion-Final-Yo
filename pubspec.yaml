@@ -67,7 +67,7 @@ flutter:
       - icons/EjesTrans/4.jpeg
       # Por respeto a mi y a los demas
       - icons/PorRespA/Acoso.jpg
-      - icons/PorRespA/Bulling.jpg
+      - icons/PorRespA/Bullying.jpg
       - icons/PorRespA/Violencia.jpg
       # Tengo Una Vida Saludable
       - icons/VidaSalu/Adicciones.jpg
@@ -90,8 +90,7 @@ flutter:
       - assets/SliderPantalla1/image7.jpg
       # "Información" Por Respeto A mi Y  A lOS demas
       - icons/PorRespA/Subtemas/Acoso2.jpg
-      - icons/PorRespA/Subtemas/Bulling2.jpg
-      - icons/PorRespA/Subtemas/Violencia2.jpg
+      - icons/PorRespA/Subtemas/Bullying2.jpeg
       # "Información" Vida Saludable
       - icons/VidaSalu/Subtemas/Adicciones2.jpg
       - icons/VidaSalu/Subtemas/HabitosAlimenticios2.jpg
@@ -153,6 +152,7 @@ flutter:
       - assets/tiempolibre/img5.png
       - assets/tiempolibre/img6.png
       # "Informacio" Bullying
+      - assets/bullying/infografiabullying.jpg
       - assets/bullying/img1a.png
       - assets/bullying/img1b.png
       - assets/bullying/img1.jpg
@@ -162,6 +162,7 @@ flutter:
       - assets/bullying/img5.jpg
       - assets/bullying/img6.jpg
       # "Informacion" Acoso
+      - assets/acoso/infografiaacoso.jpg
       - assets/acoso/img1.png
       - assets/acoso/img2.png
       - assets/acoso/img3.png
@@ -183,6 +184,7 @@ flutter:
       # "Informacion" Intereses
       - assets/intereses/img1.png
       # "Informacion" Aspiraciones
+      - assets/aspiraciones/infografiaaspiraciones.jpg
       - assets/aspiraciones/img1.png
       - assets/aspiraciones/img2.png
       - assets/aspiraciones/img3.png
@@ -191,10 +193,11 @@ flutter:
       - assets/aspiraciones/img6.png
       - assets/aspiraciones/img7.png
       # "Informacion" Identidad Genero
+      - assets/identidadgenero/infografiaidentidadgenero.jpg
       - assets/identidadgenero/img1.png
       - assets/identidadgenero/img2.png
       # "Informacion" Adicciones
-      - assets/adicciones/img1.png
+      - assets/adicciones/infografiadrogas.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

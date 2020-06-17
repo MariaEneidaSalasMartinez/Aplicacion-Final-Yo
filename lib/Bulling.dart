@@ -45,16 +45,17 @@ class _BullingState extends State<Bulling> {
         style: TextStyle(fontFamily: 'Armando',fontSize: 19.0, color: Colors.white)),
        centerTitle: true,
         ),
-     body: ListView(
+     body: SingleChildScrollView(
+     child: Column(
       children: <Widget>[          
         Container(
           child: Column(     
               children: <Widget>[ 
                 Row(
                       crossAxisAlignment: CrossAxisAlignment.center,                    
-                      children: [   
+                      children: [
                         Expanded(
-                        child: _buildSubSistemaItem('icons/PorRespA/Subtemas/Bulling2.jpg'),
+                        child: _buildSubSistemaItem('icons/PorRespA/Subtemas/Bullying2.jpeg'),
                         ), 
                       ],
                     ) ,
@@ -70,6 +71,10 @@ class _BullingState extends State<Bulling> {
                           ),
               ],
     ),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/bullying/infografiabullying.jpg"),
         ),
         Container(
           padding: EdgeInsets.all(20.0),
@@ -104,6 +109,7 @@ class _BullingState extends State<Bulling> {
           child: Image.asset("assets/bullying/img6.jpg"),
         )
       ],),
+    ),
     );
   }
 Widget _buildSubSistemaItem(String imgPath2){

@@ -18,6 +18,18 @@ class _HabitosActividadFisicaState extends State<HabitosActividadFisica> {
   @override
   Widget build(BuildContext context) {     
     return Scaffold(
+      floatingActionButton: FancyButton(
+        onPressed: () async
+        {
+          var datos =
+          await FirebaseDatabase.instance.reference().child("plantilla").child("Actividad fisica").once();
+          List preguntas = datos.value as List;
+          Navigator. of(context).push(
+            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'Actividad fisica',)
+            ),
+          );
+        },
+      ),
       backgroundColor: Colors.white,
       appBar: AppBar(
         leading: IconButton(
@@ -33,7 +45,8 @@ class _HabitosActividadFisicaState extends State<HabitosActividadFisica> {
         style: TextStyle(fontFamily: 'Armando',fontSize: 19.0, color: Colors.white)),
        centerTitle: true,
         ),
-   body:  ListView(
+   body: SingleChildScrollView(
+    child: Column(
       children: <Widget>[          
         Container(
           child: Column(     
@@ -96,6 +109,7 @@ class _HabitosActividadFisicaState extends State<HabitosActividadFisica> {
           child: Image.asset("assets/habitofisico/nueve.jpeg"),
         ),
       ],),
+    ),
     );
   }
   

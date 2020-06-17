@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:yo/Bulling.dart';
-import 'package:yo/Violencia.dart';
 import 'package:yo/Acoso.dart';
 
 void main() => runApp(MaterialApp(
@@ -61,7 +60,7 @@ class _PorRespetoAmiYALosDemasState extends State<PorRespetoAmiYALosDemas> {
                     Row(                   
                       children: [    
                        Expanded(
-                        child: _buildSubSistemaItem2('icons/PorRespA/Bulling.jpg'),
+                        child: _buildSubSistemaItem2('icons/PorRespA/Bullying.jpg'),
                        ),
                       ],
                     ),
@@ -119,37 +118,6 @@ class _PorRespetoAmiYALosDemasState extends State<PorRespetoAmiYALosDemas> {
                   tag: imgPath,
                   child: Image(
                     image:AssetImage(imgPath),
-                    fit: BoxFit.cover,
-                    height: 130.0,
-                    width: 360.0
-                  )
-                ),
-              ]
-            )
-          ),
-        ]
-      ),
-    ),
-  );
-}
-Widget _buildSubSistemaItem11(String imgPath2){
-  return Padding(
-    padding: EdgeInsets.only(left:0.0, right:0.0, top: 10.0),
-    child: InkWell(
-      onTap: () { 
-         Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => Violencia(heroTag: imgPath2)
-                    ));
-        },
-      child: Row(
-        children: <Widget>[          
-        Container(
-            child: Row(
-              children: [
-                Hero(
-                  tag: imgPath2,
-                  child: Image(                    
-                    image:AssetImage(imgPath2),
                     fit: BoxFit.cover,
                     height: 130.0,
                     width: 360.0

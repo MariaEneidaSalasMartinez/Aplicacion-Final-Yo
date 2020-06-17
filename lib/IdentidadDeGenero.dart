@@ -18,6 +18,18 @@ class _IdentidadDeGeneroState extends State<IdentidadDeGenero> {
   @override
   Widget build(BuildContext context) {     
     return Scaffold(
+      floatingActionButton: FancyButton(
+        onPressed: () async
+        {
+          var datos =
+          await FirebaseDatabase.instance.reference().child("plantilla").child("Identidad de genero").once();
+          List preguntas = datos.value as List;
+          Navigator. of(context).push(
+            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'Identidad de genero',)
+            ),
+          );
+        },
+      ),
       backgroundColor: Colors.white,
       appBar: AppBar(
         leading: IconButton(
@@ -33,7 +45,8 @@ class _IdentidadDeGeneroState extends State<IdentidadDeGenero> {
         style: TextStyle(fontFamily: 'Armando',fontSize: 19.0, color: Colors.white)),
        centerTitle: true,
         ),
-   body: ListView(
+   body: SingleChildScrollView(
+    child: Column(
       children: <Widget>[          
         Container(
           child: Column(     
@@ -61,6 +74,10 @@ class _IdentidadDeGeneroState extends State<IdentidadDeGenero> {
         ),
         Container(
           padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/identidadgenero/infografiaidentidadgenero.jpg"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
           child: Image.asset("assets/identidadgenero/img1.png"),
         ),
         Container(
@@ -68,6 +85,7 @@ class _IdentidadDeGeneroState extends State<IdentidadDeGenero> {
           child: Image.asset("assets/identidadgenero/img2.png"),
         ),
       ],),
+    ),
     );
   }
   

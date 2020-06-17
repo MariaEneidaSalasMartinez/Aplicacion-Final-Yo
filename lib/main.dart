@@ -74,7 +74,8 @@ class _MyHomePageState extends State<MyHomePage> {
 Widget build(BuildContext context){
   return Scaffold(
     backgroundColor: Colors.teal[300],
-    body: ListView(
+    body: SingleChildScrollView(
+      child: Column(
       children: <Widget>[    
         SizedBox(height: 70.0),
         Container(
@@ -174,6 +175,7 @@ Widget build(BuildContext context){
         ):SizedBox(),
       ],  
     ), 
+  ),
   );
   }
 

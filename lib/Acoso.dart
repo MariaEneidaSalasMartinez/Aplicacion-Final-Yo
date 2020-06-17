@@ -46,7 +46,8 @@ class _AcosoState extends State<Acoso> {
         style: TextStyle(fontFamily: 'Armando',fontSize: 19.0, color: Colors.white)),
        centerTitle: true,
         ),
-    body: ListView(
+    body: SingleChildScrollView(
+    child: Column(
       children: <Widget>[
         Container(
           child: Column(
@@ -74,6 +75,10 @@ class _AcosoState extends State<Acoso> {
         ),
         Container(
           padding: EdgeInsets.all(20.0),
+          child: Image.asset("assets/acoso/infografiaacoso.jpg"),
+        ),
+        Container(
+          padding: EdgeInsets.all(20.0),
           child: Image.asset("assets/acoso/img1.png"),
         ),
         Container(
@@ -88,7 +93,9 @@ class _AcosoState extends State<Acoso> {
           padding: EdgeInsets.all(20.0),
           child: Image.asset("assets/acoso/img4.png"),
         ),
-      ],),
+      ],
+    ),
+    ),
     );
   }
 Widget _buildSubSistemaItem(String imgPath2){

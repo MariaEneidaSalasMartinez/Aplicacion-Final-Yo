@@ -45,7 +45,8 @@ class _InteresesState extends State<Intereses> {
         style: TextStyle(fontFamily: 'Armando',fontSize: 19.0, color: Colors.white)),
        centerTitle: true,
         ),
-   body: ListView(
+   body: SingleChildScrollView(
+    child: Column(
       children: <Widget>[          
         Container(
           child: Column(     
@@ -76,6 +77,7 @@ class _InteresesState extends State<Intereses> {
           child: Image.asset("assets/intereses/img1.png"),
         ),
       ],),
+    ),
     );
   }
   

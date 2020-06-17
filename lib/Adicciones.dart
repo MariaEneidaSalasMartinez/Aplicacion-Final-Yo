@@ -19,6 +19,18 @@ class _AdiccionesState extends State<Adicciones> {
   @override
   Widget build(BuildContext context) {     
     return Scaffold(
+      floatingActionButton: FancyButton(
+        onPressed: () async
+        {
+          var datos =
+          await FirebaseDatabase.instance.reference().child("plantilla").child("Adicciones").once();
+          List preguntas = datos.value as List;
+          Navigator. of(context).push(
+            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'Adicciones',)
+            ),
+          );
+        },
+      ),
       backgroundColor: Colors.white,
       appBar: AppBar(
         leading: IconButton(
@@ -34,10 +46,11 @@ class _AdiccionesState extends State<Adicciones> {
         style: TextStyle(fontFamily: 'Armando',fontSize: 19.0, color: Colors.white)),
        centerTitle: true,
         ),
-    body: Column(
+    body: SingleChildScrollView(
+      child: Column(
       children: <Widget>[
         Container(
-          child: Column(     
+          child: Column(
               children: <Widget>[
                 Row(
                       crossAxisAlignment: CrossAxisAlignment.center,                    
@@ -59,13 +72,15 @@ class _AdiccionesState extends State<Adicciones> {
                           ),
               ],
 
-    ),
+           ),
         ),
         Container(
           padding: EdgeInsets.all(20.0),
-          child: Image.asset("assets/adicciones/img1.png"),
+          child: Image.asset("assets/adicciones/infografiadrogas.jpg"),
         ),
-      ],),
+       ],
+      ),
+     ),
     );
   }
   

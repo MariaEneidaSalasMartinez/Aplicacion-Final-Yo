@@ -18,6 +18,18 @@ class _SexualidadState extends State<Sexualidad> {
   @override
   Widget build(BuildContext context) {     
     return Scaffold(
+      floatingActionButton: FancyButton(
+        onPressed: () async
+        {
+          var datos =
+          await FirebaseDatabase.instance.reference().child("plantilla").child("Sexualidad").once();
+          List preguntas = datos.value as List;
+          Navigator. of(context).push(
+            MaterialPageRoute(builder: (_) => PantallaEncuesta(preguntas: preguntas, tema: 'Sexualidad',)
+            ),
+          );
+        },
+      ),
       backgroundColor: Colors.white,
       appBar: AppBar(
         leading: IconButton(
@@ -33,7 +45,8 @@ class _SexualidadState extends State<Sexualidad> {
         style: TextStyle(fontFamily: 'Armando',fontSize: 19.0, color: Colors.white)),
        centerTitle: true,
         ),
-   body: ListView(
+   body: SingleChildScrollView(
+    child: Column(
       children: <Widget>[          
         Container(
           child: Column(     
@@ -116,6 +129,7 @@ class _SexualidadState extends State<Sexualidad> {
           child: Image.asset("assets/sexualidad/img14.png"),
         ),
       ],),
+    ),
     );
   }
   
